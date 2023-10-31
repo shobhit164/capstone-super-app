@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Inter:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@400;500&family=Single+Day&display=swap');
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image_container{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.image_container > div{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    width: 55%;
+    bottom: 12%;
+    left: 8%;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.image_container > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.form_section h1{
+    font-family: single day, sans-serif;
+    text-align: 'center';
+    width: '100%';
+    word-spacing: 5px;
+    color: #72DB73;
+    font-size: 50px;
+}
+
+.form_section > form > p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: 'center';
+    color: white;
+    font-size: 18px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+}
+
+
+.form h5{
+    color: #FF0000;
+    font-size: 12.5px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+}
+
+.form h5{
+    margin-top: 3px;
+}
+
+.info > h5{
+    margin-top: 6px;
+}
+
+
+.form_section{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.para span{
+    color: #72DB73;
+}
+
+.checkField span{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    color: #7C7C7C;
+    font-size: small;
+    margin-left: 8px;
+}
+
+.form_section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info > input, .form h5, .checkField, .para, .form button{
+    width: 50%;
+}
+
+.info > input{
+    background-color: #292929;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info > input, button{
+    color: white;
+    height: 40px;
+    border: none;
+    flex-shrink: 0;
+}
+
+form > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.checkField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form > button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #72DB73;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.para > p{
+    font-size: small;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: #7C7C7C;
+    line-height: 20px;
+}

@@ -1,0 +1,60 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow-y: auto;
+}
+
+.container > nav{
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 1.5%;
+    height: 10%;
+}
+
+.container > nav > p{
+    font-size: 2.5rem;
+    font-family: single day;
+    color: #72DB73;
+}
+
+.container img{
+    height: 80%;
+}
+
+.container > section{
+    height: calc(100vh - 10%);
+    padding: 0% 3%;
+}
+
+.movies_section p{
+    font-size: 1.2rem;
+    font-family: Roboto;
+}
+
+.collection > span{
+    font-size: 1.5rem;
+    font-family: roboto;
+    color: #878787;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.images > img{
+    margin-right: 2%;
+}
+
+
+
+*{
+    /* border: 2px solid red; */
+    color: white;
+}

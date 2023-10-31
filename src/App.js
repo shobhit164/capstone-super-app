@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Registration from './components/Registration';
+import Error from './components/Error';
+import Home from './components/Home';
+import Category from './components/Category';
+import Movies from './components/Movies';
 
 function App() {
+  // Check if local storage is empty
+  const isLocalStorageEmpty = localStorage.getItem('categories') === null;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={isLocalStorageEmpty ? <Registration /> : <Home />}></Route>
+        <Route path='/category' element={<Category />}></Route>
+        <Route path='/home' element={<Home />}></Route>
+        <Route path='/register' element={<Registration />}></Route>
+        <Route path='/movies' element={<Movies />}></Route>
+        <Route path='*' element={<Error />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,14 @@
+.notes{
+    background-color: #F1C75B;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+}
+
+.notes > h2{
+    color: black;
+    font-size: xx-large;
+}

@@ -1,0 +1,40 @@
+.child_1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr ;
+    grid-template-rows: 0.3fr 1fr 1fr 1.09fr;
+    padding: 4%;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.col_1{
+    grid-column: span 1;
+}
+
+.col_2{
+    grid-column: span 2;
+}
+
+.col_3{
+    grid-column: span 3;
+}
+
+.row_2{
+    grid-row: span 2;
+}
+
+.row_3{
+    grid-row: span 3;
+}
+
+.rest_row{
+    grid-row: span 4;
+}
+
+*{
+    /* border: 2px solid red ; */
+}
